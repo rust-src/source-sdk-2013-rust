@@ -7,6 +7,7 @@
 #define _NEXT_BOT_COMPONENT_INTERFACE_H_
 
 #include "NextBotEventResponderInterface.h"
+//next line was gone from original cstrike program
 #include "vscript_server.h"
 
 class INextBot;
@@ -42,6 +43,7 @@ class INextBotComponent : public INextBotEventResponder
 {
 public:
 	INextBotComponent( INextBot *bot );
+	//next line was gone from original cstrike program
 	virtual ~INextBotComponent();
 
 	virtual void Reset( void )	{ m_lastUpdateTime = 0; m_curInterval = TICK_INTERVAL; }				// reset to initial state
@@ -53,6 +55,7 @@ public:
 
 	virtual INextBot *GetBot( void ) const  { return m_bot; }
 
+//next small section was gone from original cstrike program
 	//- Script access to component functions ------------------------------------------------------------------
 	DECLARE_ENT_SCRIPTDESC();
 	HSCRIPT GetScriptInstance();
@@ -66,6 +69,7 @@ private:
 	INextBot *m_bot;
 	INextBotComponent *m_nextComponent;									// simple linked list of components in the bot
 
+//next line was gone from original cstrike program
 	HSCRIPT	m_hScriptInstance;
 };
 
@@ -101,7 +105,7 @@ inline float INextBotComponent::GetUpdateInterval()
 { 
 	return m_curInterval; 
 }
-
+//next section was gone from original cstrike program
 inline HSCRIPT ToHScript( INextBotComponent *pNextBotComponent )
 {
 	return ( pNextBotComponent ) ? pNextBotComponent->GetScriptInstance() : NULL;

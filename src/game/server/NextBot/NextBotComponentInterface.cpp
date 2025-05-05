@@ -7,6 +7,7 @@
 
 #include "NextBotInterface.h"
 #include "NextBotComponentInterface.h"
+//next line was gone from original cstrike program
 #include "vscript_server.h"
 
 // memdbgon must be the last include file in a .cpp file!!!
@@ -15,6 +16,7 @@
 INextBotComponent::INextBotComponent( INextBot *bot )
 {
 	m_curInterval = TICK_INTERVAL;
+	//next line was gone from original cstrike program
 	m_hScriptInstance = NULL;
 	m_lastUpdateTime = 0;
 	m_bot = bot;
@@ -23,6 +25,7 @@ INextBotComponent::INextBotComponent( INextBot *bot )
 	bot->RegisterComponent( this );
 }
 
+//the rest of this section was gone from original cstrike program
 INextBotComponent::~INextBotComponent()
 {
 	if ( g_pScriptVM && m_hScriptInstance )
