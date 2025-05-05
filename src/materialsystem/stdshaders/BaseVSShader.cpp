@@ -47,6 +47,10 @@
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
 
+// Fix issue with missing definition? 
+// probably needs re-evaluated
+IMaterialSystem* g_pMaterialSystem = NULL;
+
 static ConVar mat_fullbright( "mat_fullbright","0", FCVAR_CHEAT );
 
 // These functions are to be called from the shaders.
