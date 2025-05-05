@@ -32,10 +32,8 @@ C_NextBotCombatCharacter::C_NextBotCombatCharacter()
 	m_bForceShadowType = false;
 
 	TheClientNextBots().Register( this );
-<<<<<<< HEAD:src/game/client/NextBot/C_NextBot.cpp
-	UseClientSideAnimation();
-=======
->>>>>>> 2fb375dc (Add counter-strike source files):mp/src/game/client/NextBot/C_NextBot.cpp
+	// this was commented out in the original cstrike project?
+	//UseClientSideAnimation();
 }
 
 
