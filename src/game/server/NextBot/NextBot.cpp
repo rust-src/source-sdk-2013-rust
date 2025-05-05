@@ -73,6 +73,8 @@ IMPLEMENT_SERVERCLASS_ST( NextBotCombatCharacter, DT_NextBot )
 END_SEND_TABLE()
 
 //-----------------------------------------------------------------------------------------------------
+//This entire next part was commented out in the original cstrike project... idk m8
+//-----------------------------------------------------------------------------------------------------
 
 BEGIN_ENT_SCRIPTDESC( NextBotCombatCharacter, CBaseCombatCharacter, "Nextbot combat character" )
 	DEFINE_SCRIPTFUNC( GetBotId, "Get this bot's id" )

@@ -30,6 +30,7 @@ public:
 	DECLARE_CLASS( NextBotCombatCharacter, CBaseCombatCharacter );
 	DECLARE_SERVERCLASS();
 	DECLARE_DATADESC();
+	//next line was gone from original cstrike program
 	DECLARE_ENT_SCRIPTDESC();
 	
 	NextBotCombatCharacter( void );
@@ -40,6 +41,7 @@ public:
 	virtual Vector EyePosition( void );
 
 	virtual INextBot *MyNextBotPointer( void ) { return this; }
+	//next line was gone from original cstrike program
     virtual bool IsNextBot(void) const { return true; }
 
 	// Event hooks into NextBot system ---------------------------------------
