@@ -116,4 +116,8 @@ protected:
 	CPanelAnimationVarAliasType( int, m_iItemPadding, "ItemPadding", "8", "proportional_int" );		// space between each achievement item
 };
 
+<<<<<<< HEAD:src/game/client/hud_baseachievement_tracker.h
 #endif	// HUD_ACHIEVEMENT_TRACKER_H
+=======
+#endif	// HUD_ACHIEVEMENT_TRACKER_H
+>>>>>>> 2fb375dc (Add counter-strike source files):mp/src/game/client/hud_baseachievement_tracker.h
