@@ -1,1 +1,1 @@
-devtools\bin\vpc.exe /cstrike +game +shaders /mksln cstrike.sln
+devtools\bin\vpc.exe /cstrike /define:SOURCESDK +everything /mksln cstrike.sln
