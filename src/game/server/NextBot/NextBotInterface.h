@@ -63,6 +63,7 @@ public:
 	virtual IBody *			GetBodyInterface( void ) const;
 	virtual IIntention *	GetIntentionInterface( void ) const;
 	virtual IVision *		GetVisionInterface( void ) const;
+	//next 4 lines were gone from original cstrike program
 	HSCRIPT ScriptGetLocomotionInterface( void ) const { return ToHScript( this->GetLocomotionInterface() ); }
 	HSCRIPT ScriptGetIntentionInterface( void ) const { return ToHScript( this->GetIntentionInterface() ); }
 	HSCRIPT ScriptGetBodyInterface( void ) const { return ToHScript( this->GetBodyInterface() ); }
@@ -80,6 +81,7 @@ public:
 	virtual bool IsEnemy( const CBaseEntity *them ) const;			// return true if given entity is our enemy
 	virtual bool IsFriend( const CBaseEntity *them ) const;			// return true if given entity is our friend
 	virtual bool IsSelf( const CBaseEntity *them ) const;			// return true if 'them' is actually me
+	//next 3 lines were gone from original cstrike program
 	bool ScriptIsEnemy( HSCRIPT hThem ) const { return this->IsEnemy( ToEnt( hThem ) ); }
 	bool ScriptIsFriend( HSCRIPT hThem ) const { return this->IsFriend( ToEnt( hThem ) ); }
 	bool ScriptIsSelf( HSCRIPT hThem ) const { return this->IsSelf( ToEnt( hThem ) ); }

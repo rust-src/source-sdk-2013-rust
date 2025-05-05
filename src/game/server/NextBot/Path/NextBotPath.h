@@ -866,4 +866,3 @@ inline float Path::GetAge( void ) const
 
 
 #endif	// _NEXT_BOT_PATH_H_
-

@@ -106,5 +106,3 @@ inline CBaseEntity *PathFollower::GetHindrance( void ) const
 
 
 #endif // _NEXT_BOT_PATH_FOLLOWER_
-
-

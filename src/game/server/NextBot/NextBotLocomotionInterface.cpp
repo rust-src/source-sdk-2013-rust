@@ -519,6 +519,8 @@ const Vector &ILocomotion::GetFeet( void ) const
 }
 
 //--------------------------------------------------------------------------------------------------------------
+// next full section was gone from original cstrike program
+//--------------------------------------------------------------------------------------------------------------
 
 BEGIN_ENT_SCRIPTDESC( ILocomotion, INextBotComponent, "Next bot locomotion" )
 	DEFINE_SCRIPTFUNC( Approach, "The primary locomotive method. Sets the goal destination for the bot" )

@@ -1920,5 +1920,3 @@ bool PathFollower::IsDiscontinuityAhead( INextBot *bot, Path::SegmentType type, 
 
 	return false;
 }
-
-

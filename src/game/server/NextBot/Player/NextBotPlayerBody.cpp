@@ -882,8 +882,3 @@ unsigned int PlayerBody::GetSolidMask( void ) const
 {
 	return ( m_player ) ? m_player->PlayerSolidMask() : MASK_PLAYERSOLID;
 }
-
-
-
-
-

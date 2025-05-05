@@ -7,6 +7,8 @@
 #define _NEXT_BOT_LOCOMOTION_INTERFACE_H_
 
 #include "NextBotComponentInterface.h"
+
+// next full section was gone from original cstrike program
 #ifdef TF_DLL
 #include "tf/nav_mesh/tf_nav_area.h"
 #else
@@ -27,6 +29,7 @@ inline CNavArea *ToNavArea( HSCRIPT hScript )
 	return NULL;
 }
 #endif
+// previous section was gone from original cstrike program
 
 class Path;
 class INextBot;
@@ -67,6 +70,7 @@ public:
 	// Locomotion modifiers
 	//
 	virtual bool ClimbUpToLedge( const Vector &landingGoal, const Vector &landingForward, const CBaseEntity *obstacle ) { return true; }	// initiate a jump to an adjacent high ledge, return false if climb can't start
+	// next code snippet for scriptclimbuptoledge was gone from original cstrike program
 	bool ScriptClimbUpToLedge( const Vector &landingGoal, const Vector &landingForward, HSCRIPT hObstacle )
 	{
 		return this->ClimbUpToLedge( landingGoal, landingForward, ToEnt( hObstacle ) );
@@ -388,4 +392,3 @@ inline void ILocomotion::TraceHull( const Vector& start, const Vector& end, cons
 }
 
 #endif // _NEXT_BOT_LOCOMOTION_INTERFACE_H_
-
