@@ -7,7 +7,7 @@
 
 #include "BaseVSShader.h"
 
-#include "screenspaceeffect_vs20.inc"
+#include "include/screenspaceeffect_vs20.inc"
 
 DEFINE_FALLBACK_SHADER( screenspace_general, screenspace_general_dx9 )
 BEGIN_VS_SHADER_FLAGS( screenspace_general_dx9, "Help for screenspace_general", SHADER_NOT_EDITABLE )
